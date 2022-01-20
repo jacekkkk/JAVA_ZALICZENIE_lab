@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class java_lab_1 {
 
     public static void main(String[] args) {
@@ -48,8 +49,11 @@ public class java_lab_1 {
         //cw1
 
         int LiczbaA = 4;
+        
         int LiczbaB = 12;
+        
         int wynik3 = LiczbaA + LiczbaB;
+        
         System.out.println("wynik3 =" + wynik3);
 
         int wynik4 = LiczbaA - LiczbaB;
@@ -67,8 +71,11 @@ public class java_lab_1 {
         //cw2
 
         double LiczbaX =20.3;
+        
         double LiczbaY = 11.1;
+        
         double wynik8 = LiczbaX + LiczbaY;
+        
         System.out.println("wynik8 =" + wynik8);
 
         double wynik9 = LiczbaX - LiczbaY;
@@ -110,12 +117,19 @@ public class java_lab_1 {
 
         //zad2
         int zmienna_pierwsza = 3;
+        
         int zmienna_druga = 2;
+        
         int wynik_dodawania = zmienna_pierwsza + zmienna_druga;
+        
         int wynik_odejmowania = zmienna_pierwsza - zmienna_druga;
+        
         int wynik_mnozenia = zmienna_pierwsza * zmienna_druga;
+        
         int wynik_dzielenia = zmienna_pierwsza / zmienna_druga;
-        int wynik_modulo = zmienna_pierwsza % zmienna_druga;
+        
+        int wynik_modulo = zmienna_pierwsza % zmienna_druga
+          
 
         System.out.println("\n wynik dodawania: " + wynik_dodawania+ "\n wynik odejmowania: " + wynik_odejmowania + "\n wynik mnożenia: " + wynik_mnozenia + "\n wynik dzielenia: " + wynik_dzielenia + "\n wynik modulo: " + wynik_modulo);
 
@@ -127,9 +141,13 @@ public class java_lab_1 {
         /* zad.1 proszę dodać kilka złożonych operacji uzywając kilku operatorów arytmetycznych i logicznych */
 
         int a = 9;
+        
         int b = 3;
+        
         int c = 3;
+        
         int d = a + b + c;
+        
         System.out.println(d);
         d = a - b + c;
         System.out.println(d);
@@ -142,7 +160,9 @@ public class java_lab_1 {
 
 
         boolean x = true;
+        
         boolean y = false;
+        
         System.out.println("x && y = " + (x&&y));
         System.out.println("x || y = " + (x||y) );
         System.out.println("!(x && y) = " + !(x && y));
@@ -150,10 +170,81 @@ public class java_lab_1 {
         System.out.println("!((x || y) || (x || !y) : " + !((x && y) || (!x || y)));
         System.out.println("!((x && y) || (!x || y) : " + !((x && y) || (!x || y)));
         System.out.println("((x && y) %% (x || y) : " + ((x && y) && (x || y)));
+        
+        
+        
 
+
+
+    
+
+        /* ćw.5 */
+
+        /* zad.1 podziel swój wiek przez modulo 3 i jeśli twój wiek zwraca 0 wyświetl napis "Podzielny przez 3",
+         * w innym wypadku "Niepodzielny przez 3" użyj kontrukcji if else
+         * */
+        
+         int wiek = 23 % 3;
+        
+        System.out.println(wiek); // 2
+        if (wiek == 0) {
+            System.out.println("podzielny przez 3");
+        } else {
+            System.out.println("Niepodzielny przez 3");
+        }
+
+
+
+
+         zad.2 użyj parametru trójargumentowego aby sprawdzić parzystośc nr. indeksu */
+
+        
+        
+             int numer_albumu = 57861;
+        int parzystosc = (numer_albumu % 2 == 0) ? 0 : 1;
+        
+        System.out.println("Parzystość: " +parzystosc);
+
+        /* zad.3 wpisz z klawiatury liczbę zmiennoprzecinkową (użyj klasy Scanner z poprzednich ćwiczeń)
+         * i stwórz konstrukcję else if z dowolnymi komunikatami */
+        
+        Scanner scanner = new Scanner(System.in);
+
+        
+        System.out.println("Podaj swoją wagę:");
+        
+        double first = scanner.nextDouble();
+       
+        System.out.println("Podaj swoj wzrost:");
+        
+        double second = scanner.nextDouble();
+        
+         double sum = first + second;
+        System.out.println("Suma wprowadzonych liczb to " + sum);
+        
+        CW6
+        
+        
+         /* zad1. stworzyć tablicę typu double 5-cio elementową,
+        przypisać do niej wartości i wyświetlić */
+
+        double[] podatek = new double[5];
+        
+        podatek[0] = 112.22;
+        podatek[1] = 628.21;
+        podatek[2] = 5427.61;
+        podatek[3] = 104.02;
+        podatek[4] = 23.02;
+        
+        for(int i=0; i < podatek.length; i++) {
+            System.out.println(podatek[i]);
 
     }
 }
+
+
+    
+
 
 
 
